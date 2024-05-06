@@ -1,0 +1,14 @@
+[all]
+localhost               ansible_connection=local
+
+[servers]
+
+[dev]
+ubuntu@orb              ansible_user=lance
+
+[all:vars]
+ansible_become_method=sudo
+ansible_become_user=root
+ansible_python_interpreter=/usr/bin/python3
+
+# [dev:vars]
