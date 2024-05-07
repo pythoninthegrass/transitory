@@ -46,6 +46,9 @@ vagrant ssh
 # Stop the VM
 vagrant halt
 
+# Check status
+vagrant status
+
 # Destroy the VM (w/o prompt)
 vagrant destroy -f
 ```

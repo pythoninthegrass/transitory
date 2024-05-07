@@ -231,16 +231,16 @@ write_files:
       }
 
 # TODO: QA
-ansible:
-  ansible_config: |
-    [defaults]
-    log_path                = /var/log/ansible.log
-    fact_caching            = memory
-  install_method: distro
-  package_name: ansible
-  pull:
-    url: "https://github.com/pythoninthegrass/multipass_poc.git"
-    playbook_name: "tasks/git.yml"
+# ansible:
+#   ansible_config: |
+#     [defaults]
+#     log_path                = /var/log/ansible.log
+#     fact_caching            = memory
+#   install_method: distro
+#   package_name: ansible
+#   pull:
+#     url: "https://github.com/pythoninthegrass/multipass_poc.git"
+#     playbook_name: "tasks/git.yml"
 
 bootcmd:
   - printf "[Resolve]\nDNS=1.1.1.1" > /etc/systemd/resolved.conf
